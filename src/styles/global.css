@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
