@@ -18,14 +18,11 @@ const projects: Project[] = [
     link: "https://fortfight-9c1af.firebaseapp.com/",
   },
   {
-    title: "Weather App",
-    description: "Hämtar väderdata från ett API och visar aktuell temperatur.",
-    tech: ["React", "API", "CSS"],
-  },
-  {
-    title: "Portfolio (denna sida)",
-    description: "Min egen portfolio byggd med React och TypeScript.",
-    tech: ["React", "TypeScript", "Vite"],
+    title: "ShariFit",
+    description:
+      "En fitnessapp som hjälper dig att hålla koll på dina träningspass och framsteg.",
+    tech: ["React", "Google Firebase", "CSS"],
+    link: "https://sharifit-9fdd1.web.app/",
   },
   {
     title: "Dart practice app",
