@@ -1,4 +1,4 @@
-import Button from "../button/button";
+import Button from "../button/Button";
 import styles from "./ProjectCard.module.css";
 
 type ProjectCardProps = {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./About.module.css";
-import Button from "../../components/button/button";
+import Button from "../../components/button/Button";
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);
