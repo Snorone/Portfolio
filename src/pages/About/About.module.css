@@ -30,3 +30,47 @@
     border-radius: 6px;
     font-size: 0.85rem;
   }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  /*  Hidden by default */
+  .more {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .more::before {
+    content: "";
+    display: block;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, #121212);
+  }
+  
+  /*  When open */
+  .open {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+  }
+  
+  /* Button */
+  .toggle {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    color: #646cff;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .toggle:hover {
+    text-shadow: 0 0 8px rgba(100, 108, 255, 0.6);
+  }

@@ -1,11 +1,12 @@
+import Button from "../button/button";
+import styles from "./ProjectCard.module.css";
+
 type ProjectCardProps = {
   title: string;
   description: string;
   tech: string[];
   link?: string;
 };
-
-import styles from "./ProjectCard.module.css";
 
 export default function ProjectCard({
   title,
@@ -26,13 +27,9 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
-      <div className={styles.links}>
-        {link && (
-          <a href={link} target="_blank" className={styles.link}>
-            Se projekt →
-          </a>
-        )}
-      </div>
+      <Button href={link} variant="link">
+        Se projekt →
+      </Button>
     </div>
   );
 }

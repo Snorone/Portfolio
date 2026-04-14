@@ -32,7 +32,14 @@
   padding: 0.3rem;
   border-radius: 6px;
 }
-.links {
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+/* .links {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
@@ -43,10 +50,9 @@
   font-weight: 500;
   transition: 0.3s ease;
 }
-
 .link:hover {
   color: #9f7aea;
   transform: translateX(4px);
   text-shadow: 0 0 8px rgba(100, 108, 255, 0.6),0 0 16px rgba(159, 122, 234, 0.4);
   box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
-}
+} */

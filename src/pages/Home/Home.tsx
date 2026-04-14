@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import Button from "../../components/button/button";
 
 export default function Home() {
   return (
@@ -11,15 +12,16 @@ export default function Home() {
         <p>Jag bygger moderna webbapplikationer med React och TypeScript.</p>
 
         <div className={styles.buttons}>
-          <button
+          <Button
+            variant="primary"
             onClick={() =>
               document
                 .getElementById("projects")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Se mina projekt
-          </button>
+            Mina projekt
+          </Button>
 
           <a href="mailto:dinmail@gmail.com">Kontakta mig</a>
         </div>

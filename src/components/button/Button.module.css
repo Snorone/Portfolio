@@ -1,0 +1,47 @@
+.button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #646cff;
+    align-self: flex-start;
+    font: inherit;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(100, 108, 255, 0.3);
+  }
+
+  button.button {
+    color:inherit
+  }
+  
+
+  .link {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    color: #646cff;
+  }
+
+  .link:hover {
+    color: #9f7aea;
+    transform: translateX(4px) !important;
+    text-shadow: 0 0 8px rgba(100, 108, 255, 0.6),
+                 0 0 16px rgba(159, 122, 234, 0.4);
+  }
+  
+  .primary {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 108, 255, 0.4);
+    background: rgba(100, 108, 255, 0.1);
+    color: white!important;
+  }
+  
+  .primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(100, 108, 255, 0.4);
+    background: rgba(100, 108, 255, 0.2);
+  }
