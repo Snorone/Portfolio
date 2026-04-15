@@ -6,16 +6,39 @@ export default function About() {
   const [expanded, setExpanded] = useState(false);
   return (
     <section id="about" className={styles.container}>
-      <h2>Om mig</h2>
+      <h2>About me</h2>
 
       <div className={styles.card}>
         <p>
+          Hi! My name is Tobias Hurtig and I’m a frontend developer specializing
+          in React and TypeScript. I recently completed my studies as a frontend
+          developer
+        </p>
+
+        <div className={`${styles.more} ${expanded ? styles.open : ""}`}>
+          <p>
+            I’ve worked on both personal projects and during my internship at
+            IKEA, where I helped develop an internal platform for visualizing
+            statistics. Currently, I’m building an application for a personal
+            trainer, working with both frontend and backend.
+          </p>
+
+          <p>
+            Previously, I worked as a teacher for over 10 years, which has given
+            me strong skills in communication, collaboration, and
+            problem-solving.
+          </p>
+
+          <p>
+            I’m curious, driven, and currently looking for an opportunity where
+            I can continue to grow as a developer and contribute to meaningful
+            projects.
+          </p>
+          {/* <p>
           Hej! Jag heter Tobias Hurtig och är frontendutvecklare med fokus på
           React och TypeScript. Jag har nyligen avslutat min utbildning på Grit
           Academy.
         </p>
-
-        {/*  Expandable content */}
         <div className={`${styles.more} ${expanded ? styles.open : ""}`}>
           <p>
             Jag har arbetat med både egna projekt och praktik på IKEA där jag
@@ -32,12 +55,12 @@ export default function About() {
           <p>
             Jag är nyfiken, driven och söker nu en roll där jag kan fortsätta
             utvecklas som utvecklare.
-          </p>
+          </p> */}
         </div>
 
         {/* 👇 Button */}
         <Button variant="primary" onClick={() => setExpanded(!expanded)}>
-          {expanded ? "Visa mindre ↑" : "Läs mer ↓"}
+          {expanded ? "Show less ↑" : "Read more ↓"}
         </Button>
       </div>
       <div className={styles.skills}>

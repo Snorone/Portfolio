@@ -7,28 +7,33 @@ type Project = {
   description: string;
   tech: string[];
   link?: string;
+  github?: string;
 };
 
 const projects: Project[] = [
   {
-    title: "Fortnite stats comparison",
+    title: "Fortnite Stats Comparison",
     description:
-      "Jämför dina Fortnite-statistik med en väns genom att hämta data från Fortnite Tracker API.",
+      "Compare your Fortnite statistics with a friend's by fetching data from the Fortnite Tracker API. This was one of my first real projects while studying to become a frontend developer.",
     tech: ["React", "TypeScript", "CSS"],
     link: "https://fortfight-9c1af.firebaseapp.com/",
+    github: "https://github.com/Snorone/fortfight",
   },
   {
     title: "ShariFit",
     description:
-      "En fitnessapp som hjälper dig att hålla koll på dina träningspass och framsteg.",
+      "A fitness application that helps users track workouts and monitor their progress over time.",
     tech: ["React", "Google Firebase", "CSS"],
     link: "https://sharifit-9fdd1.web.app/",
+    github: "https://github.com/Snorone/ShariFit",
   },
   {
-    title: "Dart practice app",
-    description: "En enkel app med olika övningar för dart.",
+    title: "Dart Practice App",
+    description:
+      "A simple application featuring different exercises to improve dart skills.",
     tech: ["React", "TypeScript", "Vite"],
     link: "https://dart-practice-app.vercel.app/",
+    github: "https://github.com/Snorone/dart",
   },
 ];
 
@@ -37,7 +42,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className={styles.container}>
-      <h2 className={styles.title}>Mina Projekt</h2>
+      <h2 className={styles.title}>My Projects</h2>
 
       <div
         ref={ref}
@@ -50,6 +55,7 @@ export default function Projects() {
             description={project.description}
             tech={project.tech}
             link={project.link}
+            github={project.github}
           />
         ))}
       </div>

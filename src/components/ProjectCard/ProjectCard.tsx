@@ -6,6 +6,7 @@ type ProjectCardProps = {
   description: string;
   tech: string[];
   link?: string;
+  github?: string;
 };
 
 export default function ProjectCard({
@@ -13,6 +14,7 @@ export default function ProjectCard({
   description,
   tech,
   link,
+  github,
 }: ProjectCardProps) {
   return (
     <div className={styles.card}>
@@ -27,9 +29,22 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
-      <Button href={link} variant="link">
-        Se projekt →
-      </Button>
+      {/* <Button href={link} variant="primary">
+        Go to project →
+      </Button> */}
+      <div className={styles.actions}>
+        {link && (
+          <Button href={link} variant="primary">
+            Live demo →
+          </Button>
+        )}
+
+        {github && (
+          <Button href={github} variant="primary">
+            GitHub code →
+          </Button>
+        )}
+      </div>
     </div>
   );
 }

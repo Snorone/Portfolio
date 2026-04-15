@@ -8,9 +8,10 @@
 
 .content {
   text-align: center;
-  max-width: 600px;
-
+  max-width: 1000px;
+  opacity: 100%;
   background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
   padding: 2.5rem;
   border-radius: 16px;
   backdrop-filter: blur(12px);
@@ -24,6 +25,7 @@ h1 {
 
 h1 span {
   background: linear-gradient(90deg, #646cff, #9f7aea);
+  background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,3 +69,66 @@ a {
 a:hover {
   background: rgba(255,255,255,0.05);
 }
+
+.lead {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content {
+  text-align: center;
+  max-width: 700px;
+
+  background: rgba(255, 255, 255, 0.03);
+  padding: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 span {
+  background: linear-gradient(90deg, #646cff, #9f7aea);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.lead {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+} */
