@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
+import logo from "../../assets/logo.png";
 
-const sections = ["home", "projects", "about"];
+const sections = ["Home", "Projects", "About"];
 
 export default function Navbar() {
   const [active, setActive] = useState("home");
@@ -39,7 +40,16 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <h1 className={styles.logo}>Tobbe Hurtigs portfolio</h1>
+      <img
+        src={logo}
+        alt="TH logo"
+        className={styles.logo}
+        onClick={() =>
+          document
+            .getElementById("home")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+      />
 
       <div
         className={`${styles.hamburger} ${

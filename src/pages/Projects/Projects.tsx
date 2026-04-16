@@ -14,7 +14,7 @@ const projects: Project[] = [
   {
     title: "Fortnite Stats Comparison",
     description:
-      "Compare your Fortnite statistics with a friend's by fetching data from the Fortnite Tracker API. This was one of my first real projects while studying to become a frontend developer.",
+      "Compare your Fortnite statistics with a friend's by fetching data from the Fortnite Tracker API. This was one of my first real projects while studying.",
     tech: ["React", "TypeScript", "CSS"],
     link: "https://fortfight-9c1af.firebaseapp.com/",
     github: "https://github.com/Snorone/fortfight",
@@ -30,9 +30,9 @@ const projects: Project[] = [
   {
     title: "Dart Practice App",
     description:
-      "A simple application featuring different exercises to improve dart skills.",
+      "A simple application featuring different exercises to improve dart skills. (under construction)",
     tech: ["React", "TypeScript", "Vite"],
-    link: "https://dart-practice-app.vercel.app/",
+    link: "https://snorone.github.io/dart/",
     github: "https://github.com/Snorone/dart",
   },
 ];

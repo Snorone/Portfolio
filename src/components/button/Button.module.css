@@ -45,3 +45,12 @@
     box-shadow: 0 0 12px rgba(100, 108, 255, 0.4);
     background: rgba(100, 108, 255, 0.2);
   }
+  @media screen and (max-width: 600px) {
+    .button {
+      font-size: 0.9rem;
+    }
+    .primary {
+      padding: 0.6rem;
+    }
+    
+  }

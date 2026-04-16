@@ -13,13 +13,11 @@ export default function Button({
   href,
   variant = "link",
 }: ButtonProps) {
-  console.log("variant:", variant);
   const className = [
     styles.button,
     variant === "link" ? styles.link : "",
     variant === "primary" ? styles.primary : "",
   ].join(" ");
-  console.log("variant:", variant);
   if (href) {
     return (
       <a href={href} target="_blank" className={className}>
