@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo.png";
 
 const sections = ["Home", "Projects", "About"];
 
