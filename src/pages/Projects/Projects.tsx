@@ -41,7 +41,7 @@ export default function Projects() {
   const { ref, isVisible } = useInView();
 
   return (
-    <section id="projects" className={styles.container}>
+    <section id="Projects" className={styles.container}>
       <h2 className={styles.title}>My Projects</h2>
 
       <div

@@ -120,8 +120,4 @@
   .links.open {
     transform: translateY(0);
   }
-  .logo {
-    font-weight: bold;
-    font-size: 1rem;
-  }
 }

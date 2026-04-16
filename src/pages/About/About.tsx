@@ -5,7 +5,7 @@ import Button from "../../components/button/Button";
 export default function About() {
   const [expanded, setExpanded] = useState(false);
   return (
-    <section id="about" className={styles.container}>
+    <section id="About" className={styles.container}>
       <h2>About me</h2>
 
       <div className={styles.card}>

@@ -3,7 +3,7 @@ import Button from "../../components/button/Button";
 
 export default function Home() {
   return (
-    <section id="home" className={styles.container}>
+    <section id="Home" className={styles.container}>
       <div className={styles.content}>
         <h1>
           Hi, I´m <strong>Tobias Hurtig</strong> <br />
