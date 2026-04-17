@@ -5,7 +5,7 @@ import logo from "../../assets/Logo.png";
 const sections = ["Home", "Projects", "About"];
 
 export default function Navbar() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("Home");
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -16,7 +16,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      let current = "home";
+      let current = "Home";
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
@@ -46,7 +46,7 @@ export default function Navbar() {
         className={styles.logo}
         onClick={() =>
           document
-            .getElementById("home")
+            .getElementById("Home")
             ?.scrollIntoView({ behavior: "smooth" })
         }
       />

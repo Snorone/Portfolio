@@ -36,9 +36,9 @@
   @media (max-width: 768px) {
     .container{
       padding: 2rem 2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 0rem;
     }
     .title {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
   }
