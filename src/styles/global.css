@@ -12,34 +12,7 @@ body {
               radial-gradient(circle at 50% 80%, #1a2a3f, transparent 50%),
               #0f0f1a;
   color: white;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background: radial-gradient(circle at 30% 30%, #646cff55, transparent 50%),
-              radial-gradient(circle at 70% 60%, #9f7aea55, transparent 50%);
-
-  filter: blur(80px);
-  z-index: -1;
-  opacity: 0.8;
-  transform: translate3d(var(--x), var(--y), 0);
-  will-change: transform;
-  transition: transform 0.2s ease-out;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background: radial-gradient(circle at 80% 20%, #646cff33, transparent 50%);
-
-  filter: blur(100px);
-  z-index: -1;
-
-  transform: translate3d(calc(var(--x) * -0.5), calc(var(--y) * -0.5), 0);
+  background-attachment: fixed;
 }
 
 html {
@@ -51,14 +24,3 @@ html {
   --y: 0px;
 }
 
-@keyframes floatGlow {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-  50% {
-    transform: translate(40px, -30px) scale(1.1);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
-}

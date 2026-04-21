@@ -1,0 +1,129 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 20, 0.6);
+    /* backdrop-filter: blur(5000px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    pointer-events: auto;
+    animation: overlayFade 0.9s ease;
+  }
+  
+  /* MODAL */
+  .modal {
+    position: relative;
+    background: rgba(15, 15, 26, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    z-index: 0;
+    border: 1px solid rgba(100, 108, 255, 0.2);
+    pointer-events: auto;
+    /* glow */
+    box-shadow:
+      0 0 40px rgba(100, 108, 255, 0.15),
+      0 0 80px rgba(159, 122, 234, 0.1);
+  
+      animation: fadeIn 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  
+  /* gradient top border effect */
+  .modal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(135deg, #646cff, #9f7aea);
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0);
+    mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 1;
+  }
+
+  .modal.open {
+    animation: fadeIn 0.9s ease forwards;
+  }
+  
+  .overlay.open {
+    animation: overlayFadeIn 0.25s ease forwards;
+  }
+  
+  /* EXIT */
+  .modal.close {
+    animation: fadeOut 0.9s ease forwards;
+  }
+  
+  .overlay.close {
+    animation: overlayFadeOut 0.25s ease forwards;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  
+    background: linear-gradient(135deg, #646cff, #9f7aea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+  @keyframes overlayFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes overlayFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

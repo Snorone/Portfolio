@@ -1,7 +1,11 @@
 import styles from "./Home.module.css";
 import Button from "../../components/button/Button";
+import { useState } from "react";
+import { ContactModal } from "../../components/ContactModal/ContactModal";
 
 export default function Home() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   return (
     <section id="Home" className={styles.container}>
       <div className={styles.content}>
@@ -25,17 +29,21 @@ export default function Home() {
             variant="primary"
             onClick={() =>
               document
-                .getElementById("projects")
+                .getElementById("Projects")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
             My projects
           </Button>
 
-          <Button variant="primary" href="mailto:tobias.o.hurtig@gmail.com">
+          <Button variant="primary" onClick={() => setIsContactOpen(true)}>
             Contact me
           </Button>
         </div>
+        <ContactModal
+          isOpen={isContactOpen}
+          onClose={() => setIsContactOpen(false)}
+        />
       </div>
     </section>
   );

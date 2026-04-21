@@ -26,6 +26,7 @@
   display: flex;
   gap: 2rem;
   list-style: none;
+  user-select: none;
 }
 
 .links li {
@@ -112,7 +113,7 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem 0;
-
+    user-select: none;
     transform: translateY(-200%);
     transition: 0.3s;
   }
