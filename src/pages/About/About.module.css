@@ -49,7 +49,7 @@
   }
 
   .open {
-    max-height: 500px;
+    max-height: 1500px;
     opacity: 1;
     margin-top: 1rem;
   }
@@ -66,4 +66,22 @@
   
   .toggle:hover {
     text-shadow: 0 0 8px rgba(100, 108, 255, 0.6);
+  }
+
+  .img{
+    display: flex;
+    justify-self: center;
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid #646cff;
+    box-shadow: 0 0 20px rgba(100, 108, 255, 0.2);
+  }
+
+  .profileImage{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
   }

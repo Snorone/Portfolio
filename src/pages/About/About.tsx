@@ -34,6 +34,13 @@ export default function About() {
             I can continue to grow as a developer and contribute to meaningful
             projects.
           </p>
+          <div className={styles.img}>
+            <img
+              src="../src/assets/tobbehalv.jpg"
+              alt="Tobias Hurtig"
+              className={styles.profileImage}
+            />
+          </div>
           {/* <p>
           Hej! Jag heter Tobias Hurtig och är frontendutvecklare med fokus på
           React och TypeScript. Jag har nyligen avslutat min utbildning på Grit
