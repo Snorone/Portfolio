@@ -2,7 +2,7 @@
     position: fixed;
     inset: 0;
     background: rgba(10, 10, 20, 0.6);
-    /* backdrop-filter: blur(5000px); */
+    backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@
   }
   
   .overlay.open {
-    animation: overlayFadeIn 0.25s ease forwards;
+    animation: overlayFadeIn 0.9s ease forwards;
   }
   
   /* EXIT */
@@ -67,7 +67,7 @@
   }
   
   .overlay.close {
-    animation: overlayFadeOut 0.25s ease forwards;
+    animation: overlayFadeOut 0.9s ease forwards;
   }
   
   .title {
