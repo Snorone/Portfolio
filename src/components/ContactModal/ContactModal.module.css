@@ -14,7 +14,7 @@
   /* MODAL */
   .modal {
     position: relative;
-    background: rgba(15, 15, 26, 0.6);
+    background: rgba(15, 15, 26, 0.8);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 20px;
