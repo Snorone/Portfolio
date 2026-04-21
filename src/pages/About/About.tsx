@@ -36,7 +36,7 @@ export default function About() {
           </p>
           <div className={styles.img}>
             <img
-              src="../src/assets/tobbehalv.jpg"
+              src="../../src/assets/tobbehalv.jpg"
               alt="Tobias Hurtig"
               className={styles.profileImage}
             />
