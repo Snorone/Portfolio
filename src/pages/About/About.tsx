@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./About.module.css";
 import Button from "../../components/button/Button";
+import profileImage from "../../assets/tobbehalv.jpg";
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);
@@ -36,7 +37,7 @@ export default function About() {
           </p>
           <div className={styles.img}>
             <img
-              src="../../src/assets/tobbehalv.jpg"
+              src={profileImage}
               alt="Tobias Hurtig"
               className={styles.profileImage}
             />
