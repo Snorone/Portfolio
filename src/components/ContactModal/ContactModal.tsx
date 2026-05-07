@@ -12,6 +12,7 @@ export const ContactModal = ({ isOpen, onClose }: Props) => {
 
   useEffect(() => {
     if (isOpen) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsVisible(true);
     } else {
       // vänta på animation innan unmount
