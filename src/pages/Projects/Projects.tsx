@@ -51,6 +51,8 @@ export default function Projects() {
 
   return (
     <section id="Projects" className={styles.container}>
+      <h2 className={styles.title}>Projects</h2>
+
       <div
         ref={ref}
         className={`${styles.grid} ${isVisible ? styles.show : styles.hidden}`}
