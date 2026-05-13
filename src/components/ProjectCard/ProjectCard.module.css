@@ -5,10 +5,24 @@
   background: rgba(255, 255, 255, 0.03);
   padding: 1.5rem;
   border-radius: 16px;
-  transition: 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-}
+  backdrop-filter: blur(20px);
+  position: relative; /* viktigt */
+  z-index: 1;
+  animation: modalout 1s ease;
+  }
+  @keyframes modalout {
+    from {
+      transform:scale(1.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
 
 .card:hover {
   transform: translateY(-6px) scale(1.02);
@@ -45,20 +59,50 @@
   gap: 1rem;
   margin-top: auto;
 }
-/* .links {
-  display: flex;
-  gap: 1rem;
+
+.more {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.show {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.card.open {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: none; 
+  width: min(600px, 90vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 2000;
+
+  box-shadow: 0 30px 80px rgba(1, 1, 1, 0.8);
+  
+  animation: modalIn 1s ease;
+  }
+  @keyframes modalIn {
+    from {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+
+.toggle {
   margin-top: 1rem;
-}
-.link {
-  text-decoration: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #646cff;
-  font-weight: 500;
-  transition: 0.3s ease;
+  cursor: pointer;
 }
-.link:hover {
-  color: #9f7aea;
-  transform: translateX(4px);
-  text-shadow: 0 0 8px rgba(100, 108, 255, 0.6),0 0 16px rgba(159, 122, 234, 0.4);
-  box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
-} */

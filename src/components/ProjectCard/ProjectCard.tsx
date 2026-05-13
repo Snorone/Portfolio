@@ -7,6 +7,9 @@ type ProjectCardProps = {
   tech: string[];
   link?: string;
   github?: string;
+  expanded: boolean;
+  onToggle: () => void;
+  extraDescription?: string;
 };
 
 export default function ProjectCard({
@@ -15,12 +18,22 @@ export default function ProjectCard({
   tech,
   link,
   github,
+  expanded,
+  onToggle,
+  extraDescription,
 }: ProjectCardProps) {
   return (
-    <div className={styles.card}>
+    <div
+      className={`${styles.card} ${expanded ? styles.open : ""}`}
+      onClick={(e) => e.stopPropagation()}
+    >
       <h3 className={styles.title}>{title}</h3>
 
       <p className={styles.description}>{description}</p>
+
+      <div className={`${styles.more} ${expanded ? styles.show : ""}`}>
+        <p className={styles.extra}>{extraDescription}</p>
+      </div>
 
       <div className={styles.techList}>
         {tech.map((item) => (
@@ -45,6 +58,9 @@ export default function ProjectCard({
           </Button>
         )}
       </div>
+      <button className={styles.toggle} onClick={onToggle}>
+        {expanded ? "Show less ↑" : "Read more ↓"}
+      </button>
     </div>
   );
 }
